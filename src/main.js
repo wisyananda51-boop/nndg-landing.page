@@ -1,48 +1,48 @@
-import './style.css'
-import '@fortawesome/fontawesome-free/css/all.min.css'
+import "./style.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import 'swiper/css'
-import Swiper from 'swiper'
-import { Navigation } from 'swiper/modules'
+import "swiper/css";
+import Swiper from "swiper";
+import { Navigation, Autoplay } from "swiper/modules";
 
-new Swiper('.swiper',{
-    modules:[Navigation],
-    slidesPerView:1,
-    spaceBetween:24,
-    navigation:{
-        nextEl:'.button-next', 
-        prevEl:'.button-prev'
+new Swiper(".swiper", {
+  modules: [Navigation, Autoplay],
+  slidesPerView: 1,
+  spaceBetween: 24,
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
     },
-    breakpoints:{
-        640:{
-            slidesPerView:2,
-        },
-        1024:{
-            slidesPerView:4,
-        }
+    1024: {
+      slidesPerView: 4,
     },
-    autoplay:{
-        delay:1000,
-    }
-})
+  },
+  autoplay: {
+    delay: 3000,
+  },
+});
 
-new Swiper('.testimoni',{
-    modules:[Navigation],
-    slidesPerView:1,
-    spaceBetween:24,
-    navigation:{
-        nextEl:'.testi-next', 
-        prevEl:'.testi-prev'
+new Swiper(".testimoni", {
+  modules: [Navigation, Autoplay],
+  slidesPerView: 1,
+  spaceBetween: 50,
+  navigation: {
+    nextEl: ".testi-next",
+    prevEl: ".testi-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
     },
-    breakpoints:{
-        640:{
-            slidesPerView:2,
-        },
-        1024:{
-            slidesPerView:3,
-        }
+    1024: {
+      slidesPerView: 3,
     },
-    autoplay:{
-        delay:1000,
-    }
-})
+  },
+  autoplay: {
+    delay: 3000,
+  },
+});
